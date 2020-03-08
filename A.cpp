@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <ctime>
 using namespace std;
 
 int main()
@@ -12,8 +13,9 @@ int main()
     {
         cout<<mas[0]<<endl;
         return 0;
-    }
+    }   
 
+    int start = clock();
     for(int i = 0; i < n; i++)
     {
         counter1=0;
@@ -51,8 +53,10 @@ int main()
     }
     if (f<0) f=-f;
     cout<<f<<endl;
+    int finish = clock();
+    cout << "time = " << (float)(finish - start)/CLOCKS_PER_SEC << endl;
     return 0;
 }
 
 
-//Ïðîâåðÿåì íà ïðîñòîòó, ïîòîì óìíîæàåì ïðîñòûå íà -1, ïîòîì  óìíîæàåì âñå ÷èñëà ìàññèâà
+//˜˜˜˜˜˜˜˜˜ ˜˜ ˜˜˜˜˜˜˜˜, ˜˜˜˜˜ ˜˜˜˜˜˜˜˜ ˜˜˜˜˜˜˜ ˜˜ -1, ˜˜˜˜˜  ˜˜˜˜˜˜˜˜ ˜˜˜ ˜˜˜˜˜ ˜˜˜˜˜˜˜
